@@ -4,7 +4,7 @@
 # But not these files...
 !.bashrc
 !.gitignore
-!.emacs.d
+!.emacs
 !.screenrc
 !.bash
 !.bash_aliases
