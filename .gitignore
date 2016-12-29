@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files...
+!.bashrc
+!.gitignore
+!.emacs.d
+!.screenrc
+!.bash
+!.bash_aliases

@@ -1,0 +1,30 @@
+bindkey "^[j" eval "copy" "stuff ^b"  # enter copy mode and move up one page
+bindkey "^j" eval "copy" "stuff j"    # enter copy mode and move up one line
+bindkey -m "^[j" stuff ^b             # move up one page
+bindkey -m "^j" stuff j               # move up one line
+
+# Fix for residual text
+altscreen on
+
+term screen-256color
+bind ',' prev
+bind '.' next
+
+# Turn welcome message off
+startup_message off
+
+# disable vbell (so wm urgency hints can work from within screen)
+vbell off
+
+# Increase the scrollback buffer
+defscrollback 5000
+
+bind 'K' kill
+bind 'W' windowlist
+bind 'V' vert_split
+bind 'X' remove
+#change the hardstatus settings to give an window list at the bottom of the
+#screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+#hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%< %{= kG}%-=%c:%s%{-}'
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
