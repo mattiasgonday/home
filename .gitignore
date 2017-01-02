@@ -4,7 +4,8 @@
 # But not these files...
 !.bashrc
 !.gitignore
+!.gitconfig
 !.emacs
 !.screenrc
-!.bash
-!.bash_aliases
+!.bash_aliases # linux
+!.bash_profile # mac

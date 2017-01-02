@@ -11,8 +11,8 @@ alias lh='ls -a | egrep "^\."'
 #Perform mkdir and cd using a single command
 function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
-alias pd='pd'
-alias pop='pop'
+alias pushd='pd'
+alias popd='pop'
 alias d='dirs -v'
 
 alias sh='sudo shutdown -h now'
