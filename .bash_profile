@@ -66,6 +66,7 @@ alias less='less -FSRXc'                    # Preferred 'less' implementation
 alias pd='pushd'
 alias pop='popd'
 alias d='dirs -v'
+alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
