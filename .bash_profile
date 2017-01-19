@@ -315,3 +315,8 @@ export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
 
 export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+
+
+if [ -n "$BASH_VERSION" ] && [ -f $HOME/.bashrc ];then
+    source $HOME/.bashrc
+fi
